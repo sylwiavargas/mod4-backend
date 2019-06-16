@@ -31,9 +31,9 @@ class Api::V1::MessagesController < ApplicationController
   def update
     if @message = Message.update(message_params)
       @message.save
-      redirect_to @message
+      render json: @message, status: :accepted
     else
-      render :edit
+      render json: { errors: @message.errors.full_messages }, status: :unprocessible_entity
     end
   end
 

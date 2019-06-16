@@ -32,9 +32,9 @@ class Api::V1::FormsController < ApplicationController
   def update
     if @form = Form.update(form_params)
       @form.save
-      redirect_to @form
+      render json: @form, status: :accepted
     else
-      render :edit
+      render json: { errors: @form.errors.full_messages }, status: :unprocessible_entity
     end
   end
 

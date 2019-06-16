@@ -31,9 +31,9 @@ class Api::V1::UsersController < ApplicationController
   def update
     if @user = User.update(user_params)
       @user.save
-      redirect_to @user
+      render json: @user, status: :accepted
     else
-      render :edit
+      render json: { errors: @muser.errors.full_messages }, status: :unprocessible_entity
     end
   end
 
