@@ -6,14 +6,17 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-# Form.destroy_all
-# Comment.destroy_all
-# Message.destroy_all
-# User.destroy_all
+Form.destroy_all
+Comment.destroy_all
+Message.destroy_all
+User.destroy_all
+Type.destroy_all
 
-Form.create!(description: "situation", what_made_you_feel: "bad", what_you_wish_done: "act", how_do_you_want_resolved: "do", your_name: "", persons_name: "", your_email: "", publish: "", comment: "", questions: "", resources: "")
+Type.create!(name:"sexism")
 
-User.create!(username:"Mb25", password:"what", email:"what@gmail.com", user_status:"")
+Form.create!(description: "situation", what_made_you_feel: "bad", what_you_wish_done: "act", how_do_you_want_resolved: "do", your_name: "", persons_name: "", your_email: "", publish: "", comment: "", questions: "", resources: "", type_id: 1)
+
+User.create!(username:"Mb25", password:"whatwhat", email:"what@gmail.com", user_status:"")
 
 Message.create!(content: "I don't know", user_id: 1)
 
