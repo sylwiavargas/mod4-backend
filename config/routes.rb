@@ -8,6 +8,7 @@ Rails.application.routes.draw do
         resources :messages#, only: [:index, :create, :show]
         resources :users#, only: [:index, :show]
         resources :forms#, only: [:index, :show]
+        resources :types
       end
     end
   end

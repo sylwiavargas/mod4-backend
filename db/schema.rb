@@ -25,12 +25,6 @@ ActiveRecord::Schema.define(version: 2019_06_17_002347) do
     t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
-  create_table "cs_types", force: :cascade do |t|
-    t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "forms", force: :cascade do |t|
     t.string "description"
     t.string "what_made_you_feel"

@@ -36,6 +36,7 @@ class Api::V1::CommentsController < ApplicationController
       render json: { errors: @comment.errors.full_messages }, status: :unprocessible_entity
     end
   end
+  end
 
   def destroy
     Comment.destroy(params[:id])

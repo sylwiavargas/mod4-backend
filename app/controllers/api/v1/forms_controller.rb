@@ -9,6 +9,7 @@ class Api::V1::FormsController < ApplicationController
 
   def new
     @form = Form.new
+    render json: @form
   end
 
   def show
@@ -17,8 +18,14 @@ class Api::V1::FormsController < ApplicationController
   end
 
   def create
+
     @form = Form.new(form_params)
     @form.save
+
+
+    render json: @form
+
+
     # @form = Form.create(form_params)
     #   if @form.valid?
     #     log_in_form(@form.id)
@@ -49,7 +56,7 @@ class Api::V1::FormsController < ApplicationController
   end
 
   def form_params
-    params.require(:form).permit(:comment, :questions, :resources, :description, :what_made_you_feel, :what_you_wish_done, :how_do_you_want_resolved, :your_name, :persons_name, :your_email, :publish)
+    params.require(:form).permit(:comment, :questions, :resources, :description, :what_made_you_feel, :what_you_wish_done, :how_do_you_want_resolved, :your_name, :persons_name, :your_email, :publish, :type_id)
   end
 
 end
