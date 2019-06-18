@@ -18,9 +18,12 @@ Form.create!(description: "situation", what_made_you_feel: "bad", what_you_wish_
 
 User.create!(username:"Mb25", password:"whatwhat", email:"what@gmail.com", user_status:"")
 
-Message.create!(content: "I don't know", user_id: 1)
+Message.create!(content: "I don't know how to react to xyz", user_id: 1)
+Message.create!(content: "What would you say to a person who says xyz", user_id: 1)
 
-Comment.create!(content: "ugh", user_id: 1, message_id: 1)
+
+Comment.create!(content: "maybe try this:", user_id: 1, message_id: 1)
+Comment.create!(content: "how about that:", user_id: 1, message_id: 2)
 
 
   #

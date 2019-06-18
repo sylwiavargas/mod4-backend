@@ -18,6 +18,7 @@ class Api::V1::CommentsController < ApplicationController
   def create
     @comment = Comment.new(comment_params)
     @comment.save
+    render json: @comment
     # @comment = Comment.create(comment_params)
     #   if @comment.valid?
     #     log_in_comment(@comment.id)
