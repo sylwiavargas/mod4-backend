@@ -6,26 +6,16 @@ class Api::V1::MessagesController < ApplicationController
     render json: @messages
   end
 
-  def new
-    @message = Message.new
-  end
-
   def show
     @message = Message.find(params[:id])
     render json: @message
   end
 
   def create
+    # byebug
     @message = Message.new(message_params)
     @message.save
-    # @message = Message.create(message_params)
-    #   if @message.valid?
-    #     log_in_message(@message.id)
-    #     redirect_to message_path
-    #   else
-    #     @errors = @message.errors.full_messages
-    #     render :new
-    #   end
+    render json: @message
   end
 
   def update
