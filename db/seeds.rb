@@ -134,9 +134,9 @@ resources: "",
 type_id: 6)
 
 Form.create!(description: "Why is there no ice-cream?",
-what_made_you_feel: "",
-what_you_wish_done: "",
-how_do_you_want_resolved: "",
+what_made_you_feel: "I mean, I like ice-cream",
+what_you_wish_done: "I wish I didn't have to fill out this form to get ice-cream",
+how_do_you_want_resolved: "I want you guys to arrange mango sorbet",
 your_name: "",
 persons_name: "",
 publish: "NO",
