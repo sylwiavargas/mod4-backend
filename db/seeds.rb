@@ -143,7 +143,7 @@ publish: "NO",
 comment: "",
 questions: "",
 resources: "",
-type_id: 3)
+type_id: 7)
 
 User.create!(username:"sylwia", password:"whatwhat", email:"what@gmail.com", user_status:"user")
 User.create!(username:"danielle", password:"I don't know", email:"eh@gmail.com", user_status:"admin")
