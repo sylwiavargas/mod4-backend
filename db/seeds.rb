@@ -21,53 +21,91 @@ Type.create!(name:"verbal abuse")
 Type.create!(name: "miscellaneous")
 Type.create!(name: "all")
 
-Form.create!(description: "situation", what_made_you_feel: "bad", what_you_wish_done: "act", how_do_you_want_resolved: "do", your_name: "", persons_name: "", your_email: "", publish: "", comment: "", questions: "", resources: "", type_id: 1)
+Form.create!(description: "Whenever I ask the teachers a question, they speak to me as if I don't understand anything. They always start explaining the most basic things, instead of addressing my question.",
+what_made_you_feel: "At first, I thought this was the convention they were trained. But I noticed  that they don't do this with my male classmates. It's starting to make feel like maybe I don't understand the subject as well as I thought",
+what_you_wish_done: "I've tried to approach the question with more context or start off by explaining where I'm stuck. I wish I could address the problem headon and call out the behavior, but I'm afraid this will make them unwilling to help me.",
+how_do_you_want_resolved: "I think there should be way to provide anonymous feedback to reduce any fear of retaliation. I think it would also be a good idea to have regular checkins or office hours for one on one checkins.",
+your_name: "Amy",
+persons_name: "Jamie",
+publish: "NO",
+comment: "I'm worried about you keeping everything bottled up. It's understandable that you're frustrated in this scenario. And you shouldn't be expected to thrive in an environment where you're being diminished. Unfortunately, this is something that women experience in all facets of life.",
+questions: "Did you notice a difference when you tried the different approaches?
+Is there anyone (staff or student) you do feel comfortable talking to about this? Was there any time where this did not happen (in the presence of someone else, at a time of day)?",
+resources: "https://www.guernicamag.com/rebecca-solnit-men-explain-things-to-me",
+type_id: 1)
+
+Form.create!(description: "Someone at the school insists on addressing me with a blaccent",
+what_made_you_feel: "She seems to think it's necessary to call me girlfriend, add slang and tell me how much she loves rap music and black men",
+what_you_wish_done: "Because it's in a professional environment, I can't tell her how I really feel. But I wish someone else would call her out on this. Because she's more senior than me and being the only person of color in my department, going to HR is out of the question",
+how_do_you_want_resolved: "It might help to have an annual training on bias microagression. I noticed when I started, that we only covered sexual harrassment training",
+your_name: "",
+persons_name: "",
+publish: "NO",
+comment: "Being the victim of subtle racism (microaggressions) can sometimes be more difficult than outright racism. It often accumulates over time and unfortunately, victims don't always get the support thye need from their peers. Unfortunately, these acts of racism are wasily brushed off as jokes by the perpetrator and those outside of your own community.",
+questions: "After one of these comments, has anyone pulled you aside to voice their disagreement with what was said? Do you have a support system outside of work that can empathise with your predicament? Are you able to leave this team or company and is that something you're interested in doing?",
+resources: "",
+type_id: 2)
+
+Form.create!(description: "The elevator in my office is often out of service and unfortuntely, the building management doesn't seem to treat this as urgently as it is, even though the building is categorized as accessible. This happens several times per year and sometimes for the whole workweek",
+what_made_you_feel: "While I'm not disabled, I realize this is a privilege that others who work in this building may not have. Maybe no one else has complained about this, but I strongly believe that a building that markets itself as being accessible should take that more seriously.",
+what_you_wish_done: "I've made comments to others, but this is the first time I've had the chance to reach out to those higher up",
+how_do_you_want_resolved: "The building elavators should be fixed or the building should lose its 'accessible' status",
+your_name: "Julia Child",
+persons_name: "I'm not sure",
+publish: "NO",
+comment: "",
+questions: "",
+resources: "",
+type_id: 3)
+
+Form.create!(description: "I think we should incorporate more product reviews in the curriculum. For someone without a heavy computer background, it can be confusing to constantly have lecturers refer to tech tools and apps, I simply wasn't exposed to. While I understand that most of the students have some experience with Google docs, Trello and Slack(to name a few), these things weren't around when I went to school. So I'm just seeing the for the first time. Lecturers shouldn't take it as a given that we know these things. IF so, then they should be listed as a pre-requistite to starting school.",
+what_made_you_feel: "Lecturers shouldn't take it as a given that we know these things. If so, then they should be listed as a pre-requistite to starting school. I feel out of depth as it is. But the more time passes, the more I feel like I've fallen behind.",
+what_you_wish_done: "Mentioning this to lecturers and TCFs hasn't been helpful because they don't see the weight that their dismissals can carry",
+how_do_you_want_resolved: "The schoold should either create a list of pre-requisite software for ALL students to review or train their teachers ot be sensitive to what outside knowledge they're bringing into the lectures",
+your_name: "Jeff",
+persons_name: "",
+publish: "NO",
+comment: "",
+questions: "",
+resources: "",
+type_id: 4)
+
+Form.create!(description: "I've caught my colleague checking me out several times. Whenever I go to her office, she deliberately and slow moves her up and down my body before addressing me. This has been making me self conscious and uncomfortable to be around her.",
+what_made_you_feel: "I haven't mentioned this to anyone because she is married with kids so I don't think they would believe me. Part of me feels like it probably isn't a sexual thing as much as it is her letting me know that she doesn't approve of the way address. I don't know who I should talk to",
+what_you_wish_done: "I want to pull her aside and address this. But what if it's all in my head? What should I say?",
+how_do_you_want_resolved: "I wish we had an anonymous hotline for employees to reach out to an HR professional for advise in these kinds of situations.",
+your_name: "Yemi",
+persons_name: "Alex",
+publish: "NO",
+comment: "You're right that this would fall within the HR rep. You shouldn't be made to feel uncomfortable in your own skin. Regardless of her intent, the fact that she has made you feel this uncomfortable is bad enough. ",
+questions: "Are you worried that pulling her aside will lead to any dire consequences?
+How often often is this happening? You mentioned each time you enter her office, but keeping a diary of occurences may be helpful if you do decide to speak with HR.
+Has she made you uncomfortable in any other implicit or explicit ways?",
+resources: "https://www.equalrights.org/legal-help/know-your-rights/sexual-harassment-at-school/",
+type_id: 5)
+
+Form.create!(description: "I was told I'm cute but stupid",
+what_made_you_feel: "I am angry because I do not want to be objectified at a professional workspace. Also, I am not stupid.",
+what_you_wish_done: "I wish I had the skills to explains to the person what impact it has on women or at least make them feel intimidated",
+how_do_you_want_resolved: "I really don't know.",
+your_name: "Ladashah",
+persons_name: "Jaro",
+publish: "NO",
+comment: "Women and marginalized communities suffer from impostor syndrome and this kind of violence reinforces the feeling.",
+questions: "",
+resources: "",
+type_id: 6)
 
 User.create!(username:"sylwia", password:"whatwhat", email:"what@gmail.com", user_status:"user")
 User.create!(username:"danielle", password:"I don't know", email:"eh@gmail.com", user_status:"admin")
 
-Message.create!(content: "I don't know how to react to xyz", user_id: 1)
-Message.create!(content: "What would you say to a person who says xyz", user_id: 1)
+Message.create!(content: "I don't know how to react when I overhear microaggressions while sitting at another table", user_id: 1)
+Message.create!(content: "What would you say to a student who tells inappropriate jokes", user_id: 1)
 
 
 Comment.create!(content: "maybe try this:", user_id: 1, message_id: 1)
 Comment.create!(content: "how about that:", user_id: 1, message_id: 2)
 
-
-5.times do
-
-Form.create!(description: "a thing happened i didnt like", what_made_you_feel: "it made me feel uncomfortable, I didnt like it", what_you_wish_done: "Wish that person would choose their language better", how_do_you_want_resolved: "someone should speak to them about their language", your_name: "sally", persons_name: "jade", your_email: "email@email.com", publish: "no", comment: "comment comment comment coment", questions: "ask a question question question", resources: "https://www.similarweb.com/top-websites/category/health/mental-health", type_id: 6)
-end
-
-5.times do
-
-Form.create!(description: "a thing happened i didnt like", what_made_you_feel: "it made me feel uncomfortable, I didnt like it", what_you_wish_done: "Wish that person would choose their language better", how_do_you_want_resolved: "someone should speak to them about their language", your_name: "jim", persons_name: "paul", your_email: "email@email.com", publish: "no", comment: "comment comment comment coment", questions: "ask a question question question", resources: "https://www.similarweb.com/top-websites/category/health/mental-health", type_id: 3)
-end
-
-5.times do
-
-Form.create!(description: "a thing happened that was inappropriate", what_made_you_feel: "it made me feel unsafe", what_you_wish_done: "want them to never do that", how_do_you_want_resolved: "immediate consequences", your_name: "lisa", persons_name: "Ashton", your_email: "email@email.com", publish: "no", comment: "comment comment comment coment", questions: "ask a question question question", resources: "https://www.similarweb.com/top-websites/category/health/mental-health", type_id: 5)
-end
-
-5.times do
-
-Form.create!(description: "here is more descriptions of the thing", what_made_you_feel: "it made me feel unsafe", what_you_wish_done: "want them to never do that", how_do_you_want_resolved: "immediate consequences", your_name: "joe", persons_name: "bo", your_email: "email@email.com", publish: "no", comment: "comment comment comment coment", questions: "ask a question question question", resources: "https://www.similarweb.com/top-websites/category/health/mental-health", type_id: 1)
-end
-
-5.times do
-
-Form.create!(description: "This thing happened that totally shouldnt have", what_made_you_feel: "it made me feel angry and upset", what_you_wish_done: "want them to never do that", how_do_you_want_resolved: "immediate consequences", your_name: "trace", persons_name: "charl", your_email: "email@email.com", publish: "no", comment: "comment comment comment coment", questions: "ask a question question question", resources: "https://www.similarweb.com/top-websites/category/health/mental-health", type_id: 2)
-end
-
-5.times do
-
-Form.create!(description: "this is a longer description of thing that happened that I didnt care to happen. Im writing it longer because in realty the description of an event is going to be much more involved. With lots of this happened and then that happened and why it was such a terrible thing to do or why it made the person feel bad and then probably other times they felt similiar and why they are only coming now to speak about it because it has finally become to hard NOT to speak about so- this length will probably be closer to the one we are expecting", what_made_you_feel: "here is another example of what may be a much longer text input that we have been using in the example, with lots of descriptions and other things that would make this a length piece of information to call", what_you_wish_done: "this one is an interesting one, what you wish had been the case instead- i thought this was a helpful category at first but now Im not so sure because I am not entirely sure what it could be used for or why we would display it- obviously what you wish you had done or what ws done was for it not to have happened. but here we are and I write it anyway- to see what I am working with ", how_do_you_want_resolved: "this too will likely be a much longer bit a text with people typing in the possible steps that could be taken to actually resolve the matter and maybe a little more about what happened that they actually forgot to put in the actual description", your_name: "MaryJim", persons_name: "JimmySal", your_email: "email@email.com", publish: "no", comment: "comment comment comment coment comment comment comment coment comment comment comment coment comment comment comment coment comment comment comment coment comment comment comment coment comment comment comment coment", questions: "ask a question question question question question question question question question question question question", resources: "https://www.similarweb.com/top-websites/category/health/mental-health", type_id: 7)
-end
-
-5.times do
-
-Form.create!(description: "This thing happened that totally shouldnt have This thing happened that totally shouldnt have This thing happened that totally shouldnt have This thing happened that totally shouldnt have", what_made_you_feel: "it made me feel angry and upset it made me feel angry and upsetit made me feel angry and upsetit made me feel angry and upsetit made me feel angry and upsetit made me feel angry and upsetit made me feel angry and upsetit made me feel angry and upsetit made me feel angry and upsetit made me feel angry and upset", what_you_wish_done: "want them to never do thatwant them to never do thatwant them to never do thatwant them to never do thatwant them to never do thatwant them to never do thatwant them to never do thatwant them to never do thatwant them to never do thatwant them to never do thatwant them to never do thatwant them to never do thatwant them to never do thatwant them to never do thatwant them to never do thatwant them to never do that", how_do_you_want_resolved: "immediate consequences immediate consequencesimmediate consequencesimmediate consequencesimmediate consequencesimmediate consequencesimmediate consequencesimmediate consequencesimmediate consequencesimmediate consequencesimmediate consequencesimmediate consequencesimmediate consequencesimmediate consequences", your_name: "bobSteph", persons_name: "suze joe", your_email: "email@email.com", publish: "no", comment: "comment comment comment coment", questions: "ask a question question question", resources: "https://www.similarweb.com/top-websites/category/health/mental-health", type_id: 4)
-end
 
 
   #
