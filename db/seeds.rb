@@ -146,7 +146,7 @@ resources: "",
 type_id: 7)
 
 User.create!(username:"sylwia", password:"whatwhat", email:"what@gmail.com", user_status:"user")
-User.create!(username:"danielle", password:"I don't know", email:"eh@gmail.com", user_status:"admin")
+User.create!(username:"danielle", password:"idontknow", email:"eh@gmail.com", user_status:"admin")
 
 Message.create!(content: "I don't know how to react when I overhear microaggressions while sitting at another table", user_id: 1)
 Message.create!(content: "What would you say to a student who tells inappropriate jokes", user_id: 1)
