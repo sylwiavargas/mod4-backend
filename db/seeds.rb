@@ -28,10 +28,23 @@ how_do_you_want_resolved: "I think there should be way to provide anonymous feed
 your_name: "Amy",
 persons_name: "Jamie",
 publish: "NO",
-comment: "I'm worried about you keeping everything bottled up. It's understandable that you're frustrated in this scenario. And you shouldn't be expected to thrive in an environment where you're being diminished. Unfortunately, this is something that women experience in all facets of life.",
+comment: "I'm worried about the student keeping everything bottled up. It's understandable that she's frustrated in this scenario. And she shouldn't be expected to thrive in an environment where she's being diminished. Unfortunately, this is something that women experience in all facets of life (see resources).",
 questions: "Did you notice a difference when you tried the different approaches?
 Is there anyone (staff or student) you do feel comfortable talking to about this? Was there any time where this did not happen (in the presence of someone else, at a time of day)?",
 resources: "https://www.guernicamag.com/rebecca-solnit-men-explain-things-to-me",
+type_id: 1)
+
+
+Form.create!(description: "I heard today that women are not skilled in Maths.",
+what_made_you_feel: "I am upset because IT is male-dominated and this stereotype is really wide-spread. ",
+what_you_wish_done: "I wish I were not paralyzed by the anger",
+how_do_you_want_resolved: "I want the instructors to address this situation with the person",
+your_name: "Roxy",
+persons_name: "Jack",
+publish: "NO",
+comment: "Researchers find software repository GitHub approved code written by women at a higher rate than code written by men, but only if the gender was not disclosed",
+questions: "It is really unfair what you have heard. Please, know that I am here to respond to such situations",
+resources: "https://www.theguardian.com/technology/2016/feb/12/women-considered-better-coders-hide-gender-github",
 type_id: 1)
 
 Form.create!(description: "Someone at the school insists on addressing me with a blaccent",
@@ -46,6 +59,18 @@ questions: "After one of these comments, has anyone pulled you aside to voice th
 resources: "",
 type_id: 2)
 
+Form.create!(description: "I felt humuliated by how my cohort views the Bronx and how they express it",
+what_made_you_feel: "It pains me that majority of our cohort members are transplants, have never been to the Bronx and yet, make assumptions about my family based on what they heard about the borough",
+what_you_wish_done: "I wish I could have address it with a single sentence that would challenge their assumptions",
+how_do_you_want_resolved: "I don't know how this may be resolved. However, I see that this taps into a bigger issue of that there is not enough of visibility for PoC developers",
+your_name: "Alexis",
+persons_name: "Katja",
+publish: "NO",
+comment: "I agree with the lack of visibility, which connects to the general difficculties in finding a job #whileblack. Google, Microsoft, Facebook and Twitter, according to the companies’ diversity reports, are on average 56 percent white, 37 percent Asian, 3 percent Hispanic and 1 percent black",
+questions: "",
+resources: "",
+type_id: 2)
+
 Form.create!(description: "The elevator in my office is often out of service and unfortuntely, the building management doesn't seem to treat this as urgently as it is, even though the building is categorized as accessible. This happens several times per year and sometimes for the whole workweek",
 what_made_you_feel: "While I'm not disabled, I realize this is a privilege that others who work in this building may not have. Maybe no one else has complained about this, but I strongly believe that a building that markets itself as being accessible should take that more seriously.",
 what_you_wish_done: "I've made comments to others, but this is the first time I've had the chance to reach out to those higher up",
@@ -56,6 +81,18 @@ publish: "NO",
 comment: "",
 questions: "",
 resources: "",
+type_id: 3)
+
+Form.create!(description: "I am really tired with our coaches saying that bootcamp is for the fittest. I do not consider myself mentally strong. I mentioned it in the application.",
+what_made_you_feel: "I feel I shouldn't complain and that if I do, I will be made feel inadequate.",
+what_you_wish_done: "I wish I had the courage to challenge these reponses.",
+how_do_you_want_resolved: "I want the management to speak to my coaches.",
+your_name: "Jessie",
+persons_name: "MOD9 coaches",
+publish: "NO",
+comment: "Bootcamps are stressful and this kind of responses do not contribute to fostering positive learning environment.",
+questions: "I hear that it is tought for you to go through the bootcamp. It is extremely important to take care of oneself during this streneous time. Self-care is important.",
+resources: "https://liveanddare.com/meditation-tips-and-answers/",
 type_id: 3)
 
 Form.create!(description: "I think we should incorporate more product reviews in the curriculum. For someone without a heavy computer background, it can be confusing to constantly have lecturers refer to tech tools and apps, I simply wasn't exposed to. While I understand that most of the students have some experience with Google docs, Trello and Slack(to name a few), these things weren't around when I went to school. So I'm just seeing the for the first time. Lecturers shouldn't take it as a given that we know these things. IF so, then they should be listed as a pre-requistite to starting school.",
@@ -96,6 +133,18 @@ questions: "",
 resources: "",
 type_id: 6)
 
+Form.create!(description: "Why is there no ice-cream?",
+what_made_you_feel: "",
+what_you_wish_done: "",
+how_do_you_want_resolved: "",
+your_name: "",
+persons_name: "",
+publish: "NO",
+comment: "",
+questions: "",
+resources: "",
+type_id: 3)
+
 User.create!(username:"sylwia", password:"whatwhat", email:"what@gmail.com", user_status:"user")
 User.create!(username:"danielle", password:"I don't know", email:"eh@gmail.com", user_status:"admin")
 
@@ -103,8 +152,12 @@ Message.create!(content: "I don't know how to react when I overhear microaggress
 Message.create!(content: "What would you say to a student who tells inappropriate jokes", user_id: 1)
 
 
-Comment.create!(content: "maybe try this:", user_id: 1, message_id: 1)
-Comment.create!(content: "how about that:", user_id: 1, message_id: 2)
+Comment.create!(content: "Oof that's tough. I wonder whether management could organize some training for us on that?", user_id: 1, message_id: 1)
+Comment.create!(content: "what are microaggressions?", user_id: 2, message_id: 1)
+Comment.create!(content: "I mean, why don't you just approach the aggressive person, take them aside and make them aware of how this comes across?", user_id: 1, message_id: 1)
+
+Comment.create!(content: "Tell them straight out that this is inappropriate", user_id: 1, message_id: 2)
+Comment.create!(content: "Say that this kind of jokes violate Flatiron School's code of conduct", user_id: 1, message_id: 2)
 
 
 
