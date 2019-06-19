@@ -22,7 +22,8 @@ Type.create!(name: "miscellaneous")
 
 Form.create!(description: "situation", what_made_you_feel: "bad", what_you_wish_done: "act", how_do_you_want_resolved: "do", your_name: "", persons_name: "", your_email: "", publish: "", comment: "", questions: "", resources: "", type_id: 1)
 
-User.create!(username:"Mb25", password:"whatwhat", email:"what@gmail.com", user_status:"")
+User.create!(username:"Mb25", password:"whatwhat", email:"what@gmail.com", user_status:"user")
+User.create!(username:"Tz89", password:"I don't know", email:"eh@gmail.com", user_status:"admin")
 
 Message.create!(content: "I don't know how to react to xyz", user_id: 1)
 Message.create!(content: "What would you say to a person who says xyz", user_id: 1)
